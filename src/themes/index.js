@@ -1,5 +1,6 @@
 export default {
     goodGuys: "#2FF924",
     goodGuysBlue: "blue",
-    badGuys: "#EB212E"
+    badGuys: "#EB212E",
+    black: "black",
 }

@@ -16,32 +16,32 @@ const App = () => {
   // sync up with, if any.
 
   useEffect(() => {
-    axios.get('https://swapi.dev/api/people')
+    axios.get('https://swapi.dev/api/people/')
       .then(resp => {
-        console.log(resp.data.results);
-        setData(resp.data.results)
+        console.log(resp.data);
+        setData(resp.data)
       })
       .catch(err => {
         console.error(err)
       })
   }, [])
 
-const StyledAlert = styled.div`
-.alert-info {
-  opacity: 0.6;
-  color: ${pr => pr.theme.badGuys};
-}
-`
+// const StyledAlert = styled.div`
+// .alert-info {
+//   opacity: 0.6;
+//   color: ${pr => pr.theme.badGuys};
+// }
+// ` 
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <StyledAlert>
+      {/* <StyledAlert> */}
         <Alert color="info">
           Click on the character names for their API!
         </Alert>
-      </StyledAlert>
+      {/* </StyledAlert> */}
       {data.map(character => {
-        return <Character info={character} />
+        return <Character info={character} key={character.height} />
       })}
     </div>
   );
