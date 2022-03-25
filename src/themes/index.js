@@ -1,5 +1,5 @@
 export default {
-    goodGuys: "green",
+    goodGuys: "#2FF924",
     goodGuysBlue: "blue",
-    badGuys: "red",
+    badGuys: "#EB212E"
 }
