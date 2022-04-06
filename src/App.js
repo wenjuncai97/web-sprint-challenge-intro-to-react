@@ -3,7 +3,6 @@ import axios from 'axios'
 import Character from './components/Character'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Alert } from 'reactstrap'
-import styled from 'styled-components'
 
 
 const App = () => {
